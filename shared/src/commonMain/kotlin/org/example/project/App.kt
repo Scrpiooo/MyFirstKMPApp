@@ -14,6 +14,9 @@ import androidx.compose.ui.tooling.preview.Preview
 @Preview
 fun App() {
     MaterialTheme {
+        val newsCount = remember {NewsCount()}
+        val read by newsCount.readCount.collectAsState()
+
         var platform = getPlatform().name
         Column(
             modifier = Modifier
@@ -24,6 +27,11 @@ fun App() {
             Text("Halo, Fadilla")
             Text("NIM : 124140136")
             Text("Platform : $platform")
+            Text("Berita dibaca: $read")
+        }
+
+        LaunchedEffect(Unit){
+            showNews(newsCount)
         }
     }
 }
