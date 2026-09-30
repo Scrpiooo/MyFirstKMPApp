@@ -7,6 +7,9 @@ plugins {
     alias(libs.plugins.composeCompiler)
 }
 
+compose.resources {
+}
+
 kotlin {
     listOf(
         iosArm64(),

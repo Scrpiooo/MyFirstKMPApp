@@ -10,12 +10,11 @@ NIM: 124140136
 
 ### Screenshot Android
 ![Screenshot Android](Screenshot%20Android.png)
-
-## News Feed Simulator
+# News Feed Simulator
 
 Aplikasi News Feed Simulator menggunakan Kotlin Multiplatform untuk menerapkan konsep Coroutines, Flow, dan StateFlow.
 
-### Fitur
+## Fitur
 - Flow untuk mensimulasikan data berita setiap 2 detik.
 - Filter berita berdasarkan kategori.
 - Transformasi data menggunakan `map`.
@@ -24,13 +23,13 @@ Aplikasi News Feed Simulator menggunakan Kotlin Multiplatform untuk menerapkan k
 - Error handling menggunakan `.catch` dan `try-catch`.
 - Unit test untuk Flow dan Coroutine.
 
-### Cara Menjalankan
+## Cara Menjalankan
 1. Buka project `MyFirstKMPApp` di Android Studio.
 2. Tunggu Gradle selesai melakukan sync.
 3. Pilih target Android atau Desktop.
 4. Jalankan aplikasi dengan tombol Run.
 
-### Unit Test
+## Unit Test
 Unit test terdapat pada:
 
 `shared/src/commonTest/kotlin/org/example/project/NewsFeedTest.kt`
@@ -38,4 +37,10 @@ Unit test terdapat pada:
 Untuk menjalankan unit test pada Windows:
 
 ```bash
-.\gradlew.bat :shared:jvmTest
+.\gradlew.bat :shared:jvmTest.
+```
+
+# My Profile App
+
+## Screenshot
+![Screenshot Android](Screenshot_20260930_194654.png)
